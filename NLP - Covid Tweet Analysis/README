@@ -1,0 +1,32 @@
+Purpose: A year after the breakout of Covid-19, this project aimed to explore the correlation
+between general public mental health and the number of cases of Covid throughout the first year 
+of the pandemic. Personally we had all experienced the increase in anxiety and depressions
+throughout the pandemic and wanted to explore is this was reflected in the general public.
+
+Method: We aimed to analyze whether this correlation existed by conducting a sentiment analysis 
+on a corpus of tweets mentioning Covid from March 2020 to January 2021. Please see the report in
+the folder for more details. 
+
+Datasets: 
+1. total_tweets.csv
+- Source: Cited from IEEE DataPort (Lamsal, 2022)
+- We hydrated this dataset by requesting the contents of these tweets using a Twitter API
+- NOTE: This dataset cannot be found in this repository due to size limitations. Please reach
+out if you'd like further information or access
+
+2. States.csv
+- Source: NYC Open Data, 2022
+- Holds the number of new Covid-19 cases in New York state from 2/28/2020 to 5/01/2021
+
+Files:
+1. ADV Topics Project Write Up.pdf - includes the abstract, literature review, hypothesis,
+method and results, and a conclusion 
+2. DataCleaning.ipynb - Cleaning the data to create a clean tweet corpus to conduct the analysis
+on
+3. NYCInfectionRate.ipynb - Generating a time series graph on the occurence of Covid-19 cases
+in NY State using States.csv
+4. NLP_Project.ipynb - Confirming Zipf's law, lexical dispersion of mental health keywords, 
+conducting a sentiment analysis, standardization of variables, and comparing Covid-19 case numbers 
+with sentiment and keyword occurence. 
+
+Contributors: Oviya Adhan, Robin Zhao, Clarissa Solis
