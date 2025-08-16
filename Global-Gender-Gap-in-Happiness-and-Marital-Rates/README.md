@@ -1,2 +1,1 @@
-# Project2_Adhan_Arroyo_Yilmaz
-Submission for Data Science 200 Project 2
+# Global-Gender-Gap-in-Happiness-and-Marital-Rates
