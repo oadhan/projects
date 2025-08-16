@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - The Need for The Feed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+</head>
+<body>
+  <header class="header_dash">
+    <h1>Data Dashboard</h1>
+  </header>
+  
+
+  <main class="content">
+         
+    <nav class="carousel-nav" aria-label="Carousel Navigation">
+        <button class = "nav-button" id="prevBtn">&lt; Prev</button>
+        <div class="page-links" id="pageLinks222">
+          <button class="page-link-btn" data-page="0">1</button>
+          <button class="page-link-btn" data-page="1">2</button>
+          <button class="page-link-btn" data-page="2">3</button>
+          <button class="page-link-btn" data-page="3">4</button>
+          <button class="page-link-btn" data-page="4">5</button>
+        </div>
+        <button class = "nav-button" id="nextBtn">Next &gt;</button>
+      </nav>
+
+    <div class="carousel-container" aria-live="polite" aria-atomic="true">
+      <section class="carousel-page active" aria-label="Page 1: The Extent of Social Media Usage">
+        <div class="page-content">
+          <h2>The Extent of Social Media Usage</h2>
+          <p>
+            To understand how social media impacts us, we must first understand the extent to which we're collectively using social media. Pew Research regularly conducts surveys regarding this topic and below are the results of some of their most recent surveys.
+          </p>
+          <div class='tableau-responsive-wrapper'>
+          <div class='tableauPlaceholder' id='viz1754159996930' style='position: relative'>
+            <noscript><a href='#'><img alt='Dashboard ' src='https://public.tableau.com/static/images/So/SocialMediaUse-PewResearch/Dashboard/1_rss.png' style='border: none' /></a></noscript>
+            <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='SocialMediaUse-PewResearch/Dashboard' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https://public.tableau.com/static/images/So/SocialMediaUse-PewResearch/Dashboard/1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+            </object>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="carousel-page" aria-label="Page 2: The Invisible Brain Chemistry Changes">
+        <div class="page-content">
+          <h2>The Invisible Brain Chemistry Changes</h2>
+          <p>
+            A research paper from the University of Liberal Arts Bangladesh, surveyed social media users to understand their social media use and mental health conditions. Two of the questions asked in this survey were: “How frequently do you experience feelings of anxiety?” and ”How frequently do you experience feelings of depression?”. Users were then prompted to answer the questions utilizing the following scale: 1 - Never, 2 - Rarely, 3 - Sometimes, 4 - Often, and 5 - Almost Always.
+          </p>
+          <p>
+            <strong>How to explore</strong>: The following visualization will help you take a closer look at the distribution of answers across survey respondents. Hover over the categories to observe the relationship between daily social media usage and feelings of depression and anxiety.
+          </p>
+          <div class='tableau-responsive-wrapper'>
+          <div class='tableauPlaceholder' id='viz1754159954694' style='position: relative'>
+            <noscript><a href='#'><img alt='Frequency of Mental Health Feelings ' src='https://public.tableau.com/static/images/Se/SecondTask_17541472082730/FrequencyofMentalHealthFeelings/1_rss.png' style='border: none' /></a></noscript>
+            <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='SecondTask_17541472082730/FrequencyofMentalHealthFeelings' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https://public.tableau.com/static/images/Se/SecondTask_17541472082730/FrequencyofMentalHealthFeelings/1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+              <param name='filter' value='publish=yes' />
+            </object>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="carousel-page" aria-label="Page 3: Platform Personalities">
+        <div class="page-content">
+          <h2>Platform Personalities</h2>
+          <p>
+            Let’s dive deeper into the relationship between social media and mental health by exploring the repeated behavioral changes that lead to anxiety or depression as noted on the homepage. However, not every social media platform is designed the same way and each results in differing user behavior. We wanted to observe whether user behavior changes depending on their preferred social media platforms based on the same users as the previous page.
+          </p>
+          <p>
+            To do so, we have divided the platforms into two categories. Personal Media Sharing platforms include: Facebook, Instagram, Youtube, Tiktok and Snapchat. Bookmarking or Discussion platforms include: Discord, Reddit, Twitter and Pinterest.
+          </p>
+          <p>
+            Users were then asked to rate, on a scale of 1 (Never) to 5 (Almost Always), how often they experience the following feelings when not actively online: Comparison Feelings, Seeking Validation Feelings, Distracted Feelings, and Restless Feelings. We have named them: Comparison Rating, Validation Rating, Distractibility Rating, and Restless Rating, respectively. We then took the average of each metric for each platform and platform category.
+          </p>
+          <p>
+            <strong>How to explore</strong>: The average rating will impact the size of the bubbles you see below. You can compare both categories and platforms and see how they affect the different mental health metrics.
+          </p>
+          <div class='tableau-responsive-wrapper'>
+          <div class='tableauPlaceholder' id='viz1754159647076' style='position: relative'>
+            <noscript><a href='#'><img alt='Average Rating per Plaform ' src='https://public.tableau.com/static/images/Ta/Task3_17529414381020/AverageRatingperPlaform/1_rss.png' style='border: none' /></a></noscript>
+            <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='Task3_17529414381020/AverageRatingperPlaform' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https://public.tableau.com/static/images/Ta/Task3_17529414381020/AverageRatingperPlaform/1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+              <param name='filter' value='publish=yes' />
+            </object>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel-page" aria-label="Page 4: What Does This Mean For You?">
+        <div class="page-content">
+          <h2>What Does This Mean For You?</h2>
+          <p>
+            Perhaps you can relate to checking for like count growth on a newly posted photo, refreshing your stories to see who viewed them, or crafting your text posts hoping for reshares. This isn't just vanity, it's the result of an algorithm designed to quietly rewire your brain.
+          </p>
+          <p>
+            Explore how your age, gender, and average daily social media usage might impact your propensity to experience anxiety or depression compared to other users.
+          </p>
+          <div class='tableau-responsive-wrapper'>
+          <div class='tableauPlaceholder' id='viz1754159954213' style='position: relative'>
+            <noscript><a href='#'><img alt='Interactive Dashboard ' src='https://public.tableau.com/static/images/So/SocialMediaUse-Interactive/InteractiveDashboard/1_rss.png' style='border: none' /></a></noscript>
+            <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='SocialMediaUse-Interactive/InteractiveDashboard' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https://public.tableau.com/static/images/So/SocialMediaUse-Interactive/InteractiveDashboard/1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+            </object>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="carousel-page about-page" aria-label="About">
+        <h2><strong>About This Project</strong></h2>
+      
+        <div class="team-info">
+            <h4>Team Members</h4>
+            <div class="team-grid">
+              <div class="team-member">
+                <img src="images/helin.jpg" alt="Helin Yilmaz">
+                <p>Helin Yilmaz</p>
+              </div>
+              <div class="team-member">
+                <img src="images/maya.jpg" alt="Maya Alhashem">
+                <p>Maya Alhashem</p>
+              </div>
+              <div class="team-member">
+                <img src="images/nory.jpg" alt="Nory Arroyo">
+                <p>Nory Arroyo</p>
+              </div>
+              <div class="team-member">
+                <img src="images/oviya.jpg" alt="Oviya Adhan">
+                <p>Oviya Adhan</p>
+              </div>
+              <div class="team-member">
+                <img src="images/vanessa.jpg" alt="Vanessa Navarro">
+                <p>Vanessa Navarro</p>
+              </div>
+            </div>
+          
+            <p><strong>Program:</strong> UC Berkeley Masters in Information and Data Science (MIDS)</p>
+            <p><strong>Course:</strong> DATASCI-209 Data Visualization Final Project</p>
+          </div>
+          
+      
+        <div class="data-sources">
+          <h4>Data Sources</h4>
+          <ul>
+            <li>American Adults’ Social Media Use (Pew Research, n=5733)</li>
+            <li>Teens, Social Media and Technology (Pew Research, n=1453)</li>
+            <li>Perception on Teens, Social Media and Mental Health (Pew Research, n=1391)</li>
+            <li>Social Media and Mental Health (University of Liberal Arts Bangladesh, n=449)</li>
+          </ul>
+        </div>
+      
+        <div class="references">
+          <h4>References</h4>
+          <ol>
+            <li>
+              Ceballos, N., & Petrofes, C. (2024, August 20). Social Media and Substance Use: What Clinicians Need to Know.
+              <br>
+              <a href="https://www.psychiatrictimes.com/view/social-media-and-substance-use-what-clinicians-need-to-know" target="_blank" rel="noopener">
+                Psychiatric Times
+              </a>
+            </li>
+            <li>
+              Gottfried, J. (2024, January 31). Americans’ Social Media Use.
+              <br>
+              <a href="https://www.pewresearch.org/internet/2024/01/31/americans-social-media-use/" target="_blank" rel="noopener">
+                Pew Research Center
+              </a>
+            </li>
+            <li>
+              Anderson, M., Gottfried, J., & Faverio, M. (2023, December 11). Teens, Social Media and Technology 2023.
+              <br>
+              <a href="https://www.pewresearch.org/internet/2023/12/11/teens-social-media-and-technology-2023/" target="_blank" rel="noopener">
+                Pew Research Center
+              </a>
+            </li>
+            <li>
+              Faverio, M., Anderson, M., & Park, E. (2025, April 22). Teens, Social Media and Mental Health.
+              <br>
+              <a href="https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/" target="_blank" rel="noopener">
+                Pew Research Center
+              </a>
+            </li>
+            <li>
+              Ahmed, S., & Syeda, M. N. (2023, July 18). Social Media and Mental Health.
+              <br>
+              <a href="https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health" target="_blank" rel="noopener">
+                University of Liberal Arts Bangladesh (via Kaggle)
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 The Need for the Feed Team</p>
+  </footer>
+  <script src="scripts.js?v=20250803"></script>
+</body>
+</html>
